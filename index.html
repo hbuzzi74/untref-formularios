@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Milligram Framework -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Formulario de contacto</title>
+</head>
+
+<body>
+
+    <img src="http://mundo-espanol.com/wp-content/uploads/2019/04/contactanos.jpg" alt="Contáctanos" id="banner">
+
+    <form action="https://formsubmit.co/hbuzzi@gmail.com" method="POST">
+        <fieldset>
+
+            <h3><em>Por favor completa el formulario de contacto!</em></h3>
+
+            <input type="text" id="nombre_completo" title="Ingresa tu nombre completo" maxlength="70"
+                placeholder="Nombre y apellido" pattern="[A-Za-z\']{2}">
+
+            <label for="fecha_de_referencia">Fecha de referencia</label>
+            <input type="date" name="fecha_de_referencia" id="fecha_de_referencia" max="2024-05-09" required>
+
+            <input type="email" name="email" id="email" pattern="[a-zA-z0-9@_-]" maxlength="50"
+                placeholder="Ingrese su e-mail" required>
+
+            <label for="turno">Motivo de contacto</label>
+
+            <div class="radio">
+                <label for="reclamo">Reclamo</label>
+                <input type="radio" name="tipo_contacto" id="reclamo" value="reclamo">
+                <label for="sugerencia">Sugerencia</label>
+                <input type="radio" name="tipo_contacto" id="sugerencia" value="sugerencia">
+                <label for="agradecimiento">Agradecimiento</label>
+                <input type="radio" name="tipo_contacto" id="agradecimiento" value="agradecimiento">
+            </div>
+
+            <br>
+            <label for="archivo_adjunto">Puedes adjuntar una imagen (formato png o jpg)</label>
+            <input type="file" id="archivo_adjunto" name="archivo_adjunto" accept="image/png, image/jpg">
+
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" maxlength="500"
+                placeholder="Déjanos tus comentarios..."></textarea>
+
+            <div class="aceptar_condiciones">
+                <input type="checkbox" id="aceptar_condiciones" title="Aceptar los términos y condiciones" required>
+                <label for="aceptar_condiciones">Aceptar los <a
+                        href="https://www.argentina.gob.ar/terminos-y-condiciones" target="_blank"> términos y
+                        condiciones</a></label>
+            </div>
+
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>

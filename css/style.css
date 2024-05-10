@@ -1,0 +1,42 @@
+#banner {
+    margin-left: 5%;
+    width: 50%;
+    align-content: center;
+}
+
+form {
+    margin-left: 5%;
+    width: 50%;
+    color: blue;
+    border-radius: 5%;
+    border: solid;
+    padding: 10px;
+    align-self: center;
+}
+
+body {
+    background-color: beige;
+}
+
+td {
+    padding: 0px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+}
+
+.radio label {
+    padding-left: 3%;
+    padding-right: 1%;
+    align-items: center;
+}
+
+.aceptar_condiciones {
+    display: flex;
+}
+
+.aceptar_condiciones label {
+    padding-left: 5px;
+}
